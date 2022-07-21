@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LagushLand</title>
+    <link rel="stylesheet" type="text/css" href="css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.min.css" />
+</head>
+
+<body onload="init()">
+<div class="slider">
+    <audio autoplay loop id="fone">
+        <source src="audio/fone.mp3" type="audio/mp3">
+    </audio>
+    <div class="item">
+        <div class="content">
+            <div class="scroller overlay">
+                <div class="nubexDiv">
+                    <img src="img/1стр.gif" alt="страница 1" class="nubex">
+                    <img src="img/main_img.PNG" alt="ЛягушЛенд" class="main-img-start">
+                    <a href="#" id="bb-nav-next-2"><img src="img/main_start.png" alt="Начать путешествие" class="main-img-start-2 big"></a>
+                    <a href="#" id="bb-nav-next-3"><img src="img/main_play.png" alt="Начать играть" class="main-img-start-3 big"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="content">
+            <div class="scroller overlay">
+                <div class="nubexDiv">
+                    <img src="img/стр2.gif" alt="страница 2" class="nubex">
+                    <img src="img/txt-2-bg.png" alt="Первый текст" class="txt2 txt">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="content">
+            <div class="scroller overlay">
+                <div class="nubexDiv">
+                    <img src="img/стр3.gif" alt="страница 3" class="nubex" style="top: -50px; height: 914px;">
+                    <img src="img/txt-3.png" alt="Второй текст" class="txt3 txt" style="position:absolute; width: 40%; top: 5%;">
+                    <img src="img/txt-3-2.png" alt="Второй текст" class="txt3 txt" style="position:absolute; width: 40%; top: 53%;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="content">
+            <div class="scroller overlay">
+                <div class="nubexDiv">
+                    <img src="img/стр4.gif" alt="страница 4" class="nubex">
+                    <img src="img/txt-4.png" alt="Второй текст" class="txt4 txt">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="content">
+            <div class="scroller overlay">
+                <div class="nubexDiv">
+                    <img src="img/стр5.gif" alt="страница 5" class="nubex">
+                    <img src="img/txt-5.png" alt="Второй текст" class="txt5 txt" style="top:15%;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="content">
+            <div class="scroller overlay">
+                <div class="nubexDiv">
+                    <img src="img/стр6.gif" alt="страница 6" class="nubex" style="top: -100px; height: 964px;">
+                    <img src="img/txt-6.png" alt="Второй текст" class="txt6 txt" style="position: absolute;
+left: 40%;
+top: -5%; width: 40%;">
+                    <img src="img/txt-6-2.png" alt="Второй текст" class="txt6 txt" style="position: absolute;
+left: 55%;
+top: 30%;
+width: 40%;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="content">
+            <div class="scroller overlay">
+                <div class="nubexDiv">
+                    <img src="img/стр7.gif" alt="страница 7" class="nubex" style="top: -50px; height: 914px;">
+                    <img src="img/txt-7.png" alt="Второй текст" class="txt7 txt" style="width: 40%;
+top: 36%;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="content">
+            <div class="scroller overlay">
+                <div class="nubexDiv">
+                    <img src="img/стр8.gif" alt="страница 8" class="nubex">
+                    <img src="img/txt-8.png" alt="Второй текст" class="txt8 txt">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="content">
+            <div class="scroller overlay">
+                <div class="nubexDiv">
+                    <img src="img/стр9.gif" alt="страница 9" class="nubex">
+                    <img src="img/txt-9.png" alt="Второй текст" class="txt7 txt">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="content">
+            <div class="scroller overlay">
+                <div class="nubexDiv">
+                    <img src="img/стр10.gif" alt="страница 10" class="nubex">
+                    <img src="img/txt-10.png" alt="Второй текст" class="txt10 txt">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="content">
+            <div class="scroller overlay">
+                <div class="nubexDiv">
+                    <img src="img/стр11.gif" alt="страница 11" class="nubex">
+                    <div class="answers">
+                        <img src="img/douwannaplay.png" alt="Второй текст" class="txt11">
+                        <div class="answers-hor">
+                            <a href="#" class="answers-hor-a" id="start-game"><img src="img/yes-3.png" alt="Второй текст" class="big answ-hor-1"></a>
+                            <!--                            <a href="#" class="answers-hor-a" id="start-game-hover"><img src="img/yes-3-hover.png" alt="Второй текст" class="big answ-hor-1" style="display: none"></a>-->
+                            <a href="#" class="answers-hor-a" id="end-game"><img src="img/no-3.png" alt="Второй текст" class="big answ-hor-2"></a>
+                            <!--                            <a href="#" class="answers-hor-a" id="end-game-hover"><img src="img/no-3-hover.png" alt="Второй текст" class="big answ-hor-2" style="display: none"></a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="content">
+            <div class="scroller overlay" style="background: #000;">
+                <div class="nubexDiv">
+                    <img src="img/стр12.gif" alt="страница 12" class="nubex" id="q1">
+                    <div class="answer-ver" id="q11">
+                        <img src="img/heal_quest.png" alt="" class="quest">
+                        <a href="#"><img src="img/aibolit.png" alt="" class="rightAnswer answ-1 big"></a>
+                        <a href="#"><img src="img/rain_lagush.png" alt="" class="wrongAnswer answ-2 big"></a>
+                        <a href="#"><img src="img/bik.png" alt="" class="wrongAnswer answ-3 big"></a>
+                    </div>
+                    <a href="#" class="rightAnswer-1"><img src="img/aibolit_right.png" alt="" style="display: none; width: 50%; top: 20%;
+left: 25%; position: absolute;" id="aibolit_right"></a>
+                    <a href="#" class="wrongAnswer-2"><img src="img/wrong.png" alt="" style="display: none; width: 50%; top: 20%;
+left: 25%; position: absolute;" id="aibolit_wrong"></a>
+                    <!--									<img src="img/txt-9.png" alt="Второй текст" class="txt6 txt">-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="content">
+            <div class="scroller overlay">
+                <div class="nubexDiv">
+                    <img src="img/13.gif" alt="страница 13" class="nubex" id="q2">
+                    <div class="answer-ver" style="left:2%;" id="q21">
+                        <img src="img/who_hide.png" alt="" class="quest" style="width:43%; left: 2.5%;">
+                        <a href="#"><img src="img/rain_lagush.png" alt="" class="rightAnswer1 answ-1 big" style="width:35%;"></a>
+                        <a href="#"><img src="img/rogatka.png" alt="" class="wrongAnswer1 answ-2 big" style="width:35%;"></a>
+                        <a href="#"><img src="img/listolaz.png" alt="" class="wrongAnswer1 answ-3 big" style="width:35%;"></a>
+                    </div>
+                    <a href="#" class="rightAnswer-2"><img src="img/rain_right.png" alt="" style="display: none; width: 50%; top: 20%;
+left: 25%; position: absolute;" id="hide_right"></a>
+                    <a href="#" class="wrongAnswer-3"><img src="img/wrong.png" alt="" style="display: none; width: 50%; top: 20%;
+left: 25%; position: absolute;" id="hide_wrong"></a>
+                    <!--									<img src="img/txt-9.png" alt="Второй текст" class="txt6 txt">-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="content">
+            <div class="scroller overlay">
+                <div class="nubexDiv">
+                    <img src="img/14.png" alt="страница 14" class="nubex" id="q4" style="filter: brightness(40%)">
+                    <div class="lagushLand">
+                        <img src="img/fonLagush.png" alt="Фон" class="lagush-main" style="filter: brightness(40%)">
+                        <a href="#"><img src="img/game/lag-2.png" alt="" class="lag-2" style="filter: brightness(40%)"></a>
+                        <img src="img/game/lag-2-click.png" alt="" class="lag-2 click-2" style="display: none">
+                        <a href="#"><img src="img/game/lag-3.png" alt="" class="lag-3" style="filter: brightness(40%)"></a>
+                        <img src="img/game/lag-3-click.png" alt="" class="lag-3 click-3" style="display: none">
+                        <a href="#"><img src="img/game/lag-7.png" alt="" class="lag-7" style="filter: brightness(40%)"></a>
+                        <img src="img/game/lag-7-click.png" alt="" class="lag-7 click-7" style="display: none">
+                        <a href="#"><img src="img/game/lag-6.png" alt="" class="lag-6" style="filter: brightness(40%)"></a>
+                        <img src="img/game/lag-6-click.png" alt="" class="lag-6 click-6" style="display: none">
+                        <a href="#"><img src="img/game/lag-1.png" alt="" class="lag-1" style="filter: brightness(40%)"></a>
+                        <img src="img/game/lag-1-click.png" alt="" class="lag-1 click-1" style="display: none">
+                        <a href="#"><img src="img/game/lag-4.png" alt="" class="lag-4" style="filter: brightness(40%)"></a>
+                        <img src="img/game/lag-4-click.png" alt="" class="lag-4 click-4" style="display: none">
+                        <a href="#"><img src="img/game/lag-5.png" alt="" class="lag-5" style="filter: brightness(40%)"></a>
+                        <img src="img/game/lag-5-click.png" alt="" class="lag-5 click-5" style="display: none">
+                    </div>
+                    <a href="#" class="rightAnswer-4" id="questSound"><img src="img/s1.PNG" alt="" style="width: 50%; top: 20%;
+left: 25%; position: absolute; z-index: 10005;"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="content">
+            <div class="scroller overlay">
+                <div class="nubexDiv">
+                    <img src="img/15.gif" alt="страница 15" class="nubex no-click" id="q3">
+                    <img src="img/txt-15.png" alt="Второй текст" class="txt15 txt no-click" id="q31">
+                    <a href="#"><img src="img/lagush-krasn.gif" alt="Лягушка" style="opacity: 0; position:absolute;
+                    left: 15%; top: 50%; height: 60%;" class="click-krasn"></a>
+                    <a href="#" class="rightAnswer-3"><img src="img/krasn-right.png" alt="" style="display: none; width: 50%; top: 20%;
+left: 25%; position: absolute; z-index: 10005;" id="krasn_right"></a>
+                    <a href="#" class="wrongAnswer-4"><img src="img/krasn-wrong.png" alt="" style="display: none; width: 50%; top: 20%;
+left: 25%; position: absolute; z-index: 10005;" id="krasn_wrong"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="content">
+            <div class="scroller overlay">
+                <div class="nubexDiv">
+                    <canvas id="can" width="1920" height="1080" style="position:absolute; top:-30px; left:-30px"></canvas>
+                    <img src="img/draw/txt-draw.png" alt="Раскрась жабку" class="txt txt15" style="top: 0;
+left: 31%; width:35%;">
+                    <div class="colors">
+                        <img src="img/draw/black.png" alt="" id="black" onclick="color(this)" class="color big">
+                        <img src="img/draw/green.png" alt="" id="green" onclick="color(this)" class="color big">
+                        <img src="img/draw/yellow.png" alt="" id="yellow" onclick="color(this)" class="color big">
+                        <img src="img/draw/blue.png" alt="" id="blue" onclick="color(this)" class="color big">
+                        <img src="img/draw/orange.png" alt="" id="orange" onclick="color(this)" class="color big">
+                        <img src="img/draw/zel.png" alt="" id="zel" onclick="color(this)" class="color big">
+                        <img src="img/draw/brown.png" alt="" id="brown" onclick="color(this)" class="color big">
+                    </div>
+                    <img src="img/draw/save_photo.png" alt="Сохранить" onclick="window.open(save())" class="save">
+                    <img src="img/draw/erase.png" alt="Стереть" id="white" onclick="color(this)" class="clear big">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="content">
+            <div class="scroller overlay">
+                <div class="nubexDiv">
+                    <img src="img/1стр.gif" alt="Последняя страница" class="nubex">
+                    <a href="#" id="again"><img src="img/read_again.png" alt="Заново" class="again"></a>
+                    <img src="img/final.PNG" alt="Второй текст" class="txt14 txt" style="width: 30%">
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <a href="#"><img src="img/sound-bg.png" alt="Звук" class='sound' onclick="soundPlay()"></a>
+        <a href="#" id="bb-nav-prev"><img src="img/left_rem.png" alt="Влево"></a>
+        <a href="#" id="bb-nav-next"><img src="img/right_rem.png" alt="Вправо"></a>
+    </nav>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="js/jquery.mousewheel.js"></script>
+<script src="js/slides.js"></script>
+<script src="js/draw-min.js"></script>
+
+</body>
+
+</html>
+
